@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Door
+  - TriggerDoor
+  - LlaveC
+  - PCeleste
+  - LlaveP
+  - PPurpura
+  - Ganzua
+  - PGanzua
+  - LlaveR
+  - PRombo
   layers:
   - Default
   - TransparentFX
