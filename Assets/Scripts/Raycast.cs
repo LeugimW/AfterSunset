@@ -10,12 +10,14 @@ public class Raycast : MonoBehaviour
     public bool fusible2;
     public bool fusible3;
 
-    public LlaveCeleste onC;
+    public GameObject Cam;
+
+    //public LlaveCeleste onC;
 
     private void Update()
     {
         RaycastHit hit;
-        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, rango))
+        if (Physics.Raycast(Cam.transform.position, Camera.main.transform.forward, out hit, rango))
         {
             if(hit.collider.GetComponent<Esconderse>() == true)
             {
