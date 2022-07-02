@@ -13,6 +13,7 @@ public class PPurpura : MonoBehaviour
     public AudioClip closeDoor;
 
     public LlavePurpura on;
+    public NoDestruir P;
 
     public void ChangeDoorState()
     {
@@ -20,6 +21,7 @@ public class PPurpura : MonoBehaviour
         {
             doorOpen = !doorOpen;
         }
+        
     }
 
 

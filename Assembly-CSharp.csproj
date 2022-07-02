@@ -58,27 +58,41 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Llaves\LlaveGanzua.cs" />
     <Compile Include="Assets\Scripts\Key.cs" />
+    <Compile Include="Assets\Scripts\Llaves\NoDestruir.cs" />
     <Compile Include="Assets\Scripts\Puertas\PPurpura.cs" />
     <Compile Include="Assets\Scripts\Llaves\LlavePurpura.cs" />
     <Compile Include="Assets\Scripts\Eventos\DoorBreak.cs" />
+    <Compile Include="Assets\Scripts\MovMejorado.cs" />
     <Compile Include="Assets\Scripts\Notas.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\Piso1.cs" />
     <Compile Include="Assets\Scripts\Raycast.cs" />
     <Compile Include="Assets\Scripts\Puertas\PRombo.cs" />
+    <Compile Include="Assets\Scripts\Reitentar.cs" />
+    <Compile Include="Assets\Scripts\Piso2.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\Candado\CandadoTrigger.cs" />
     <Compile Include="Assets\Scripts\Flashlight.cs" />
+    <Compile Include="Assets\Scripts\Techo2.cs" />
     <Compile Include="Assets\Scripts\GiroCube.cs" />
     <Compile Include="Assets\Scripts\Esconderse.cs" />
+    <Compile Include="Assets\Scripts\Muerte.cs" />
+    <Compile Include="Assets\Scripts\Techo1.cs" />
     <Compile Include="Assets\Scripts\CajaFusibles.cs" />
     <Compile Include="Assets\Scripts\Puertas\PGanzua.cs" />
+    <Compile Include="Assets\Scripts\PauseManager.cs" />
     <Compile Include="Assets\Scripts\Llaves\LlaveRombo.cs" />
     <Compile Include="Assets\Scripts\Eventos\MonsterE.cs" />
+    <Compile Include="Assets\Scripts\MenuManager.cs" />
     <Compile Include="Assets\Scripts\Puerta.cs" />
+    <Compile Include="Assets\Scripts\Escalera.cs" />
+    <Compile Include="Assets\Scripts\ParedEsca2.cs" />
     <Compile Include="Assets\Scripts\MovObjectCam.cs" />
     <Compile Include="Assets\Scripts\CC.cs" />
     <Compile Include="Assets\Scripts\Puertas\PCeleste.cs" />
+    <Compile Include="Assets\Scripts\Pausa.cs" />
     <Compile Include="Assets\Scripts\Llaves\LlaveCeleste.cs" />
+    <Compile Include="Assets\Scripts\Screamer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

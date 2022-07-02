@@ -67,7 +67,7 @@ public class CC : MonoBehaviour
         Rotation();
         JumpCheck();
 
-        //Crouch();
+        Crouch();
 
         if (crouch == true)
         {
@@ -165,7 +165,7 @@ public class CC : MonoBehaviour
 
     }
 
-    /*void Crouch()
+    void Crouch()
     {
         if (Input.GetKey(KeyCode.LeftControl))
         {
@@ -182,5 +182,5 @@ public class CC : MonoBehaviour
         {
             _animator.SetBool("Crouch", false);
         }
-    }*/
+    }
 }

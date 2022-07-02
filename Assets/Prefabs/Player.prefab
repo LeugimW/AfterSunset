@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1313023094002899713}
   - component: {fileID: 1313023094002899714}
+  - component: {fileID: 1112138903}
+  - component: {fileID: 1112138904}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -93,6 +95,38 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!95 &1112138903
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313023094002899712}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7b58681361773d54b8288a87fa14db52, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1112138904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313023094002899712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27df74627241601498f6f3160bb613b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1112138903}
 --- !u!1 &1313023094069878628
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +291,7 @@ MonoBehaviour:
   fusible1: 0
   fusible2: 0
   fusible3: 0
-  onC: {fileID: 0}
+  Cam: {fileID: 1313023094813445292}
 --- !u!1 &7567866620129011912
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +305,8 @@ GameObject:
   - component: {fileID: 8216407301217372445}
   - component: {fileID: 7567866620129011913}
   - component: {fileID: 7567866620129011914}
-  m_Layer: 0
+  - component: {fileID: 2412763}
+  m_Layer: 8
   m_Name: ModeloPrueba
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -378,11 +413,30 @@ MonoBehaviour:
   lookSpeed: 100
   lookLimit: 80
   airControl: 0.7
-  _animator: {fileID: 0}
+  _animator: {fileID: 2412763}
   crouch: 0
   timer: 0.1
   gravity: -10
   jumpHeigth: 2
+--- !u!95 &2412763
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7567866620129011912}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e304704ec7c1b24f99b02787a6b1a39, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1313023093836031695
 PrefabInstance:
   m_ObjectHideFlags: 0

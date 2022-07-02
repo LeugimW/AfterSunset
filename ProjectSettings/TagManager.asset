@@ -18,6 +18,10 @@ TagManager:
   - Candado1
   - Candado2
   - Candado3
+  - Taquilla
+  - Fusible1
+  - Fusible2
+  - Fusible3
   layers:
   - Default
   - TransparentFX
@@ -26,8 +30,8 @@ TagManager:
   - Water
   - UI
   - CameraVerObj
-  - 
-  - 
+  - Ground
+  - Player
   - 
   - 
   - 
