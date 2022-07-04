@@ -7,6 +7,23 @@ public class Reitentar : MonoBehaviour
 {
     public GameObject menu;
 
+    private void Awake()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Sotano");
+        }
+    }
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.None;

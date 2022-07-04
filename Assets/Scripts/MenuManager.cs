@@ -7,7 +7,12 @@ public class MenuManager : MonoBehaviour
 {
     public void BotonStart()
     {
-        SceneManager.LoadScene("Build");
+        SceneManager.LoadScene("Casa");
+    }
+
+    public void Creditos()
+    {
+        SceneManager.LoadScene("Creditos");
     }
 
     public void BotonQuit()

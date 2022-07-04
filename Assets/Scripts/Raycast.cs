@@ -6,11 +6,9 @@ public class Raycast : MonoBehaviour
 {
     private int rango = 4;
 
-    public bool fusible1;
-    public bool fusible2;
-    public bool fusible3;
-
     public GameObject Cam;
+
+    public SistemaFusibless on;
 
     //public LlaveCeleste onC;
 
@@ -90,45 +88,42 @@ public class Raycast : MonoBehaviour
                     hit.collider.transform.GetComponent<PRombo>().ChangeDoorState();
                 }
             }
+            if (hit.collider.tag == "LlaveCarro")
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    hit.collider.transform.GetComponent<LlaveCarro>().Obtenida = true;
+                }
+            }
             if (hit.collider.tag == "Fusible1")
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    hit.collider.transform.GetComponent<CajaFusibles>().Fusible1 = true;
+                    hit.collider.transform.GetComponent<Fusible1>().ffusible1 = true;
                 }
             }
             if (hit.collider.tag == "Fusible2")
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    hit.collider.transform.GetComponent<CajaFusibles>().Fusible2 = true;
+                    hit.collider.transform.GetComponent<Fusible2>().ffusible2 = true;
                 }
             }
             if (hit.collider.tag == "Fusible3")
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    hit.collider.transform.GetComponent<CajaFusibles>().Fusible3 = true;
+                    hit.collider.transform.GetComponent<Fusible3>().ffusible3 = true;
                 }
             }
 
-            if (hit.collider.GetComponent<CajaFusibles>() == true)
+            if (hit.collider.GetComponent<SistemaFusibless>() == true)
             {
                 if(Input.GetKeyDown(KeyCode.E))
                 {
-                    if(fusible1 == true)
+                    if(on.palanca == true)
                     {
-                        hit.collider.GetComponent<CajaFusibles>().fusible1();
-                    }
-
-                    if (fusible2 == true)
-                    {
-                        hit.collider.GetComponent<CajaFusibles>().fusible2();
-                    }
-
-                    if (fusible3 == true)
-                    {
-                        hit.collider.GetComponent<CajaFusibles>().fusible3();
+                        on.colocar = true;
                     }
 
                 }
